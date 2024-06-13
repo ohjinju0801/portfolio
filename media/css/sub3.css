@@ -1,0 +1,181 @@
+/* 와이드 pc  */
+#imgBG{display: block;}
+
+
+#content{width:100%; margin:0 auto; height:auto; background:rgba(0,0,0,.85);position: relative;}
+
+
+#content .titleimg{width: 100%; margin: -35px auto;}
+#content h2{position: absolute; top: -500px; font-family: ClimateCrisisKR_bold;
+width: 100%; text-align: center; font-size: 3em; color: rgb(255, 255, 255);text-stroke: .5px #0095ff;}
+
+#content .animal h3{text-align: center; color: #9beeff; font-size: 3rem; margin-bottom: 30px;
+    font-family: ClimateCrisisKR_bold;}
+
+#content .animal p{color: #fff; font-size: 1.20rem; line-height: 1.5em;text-align: justify;padding: 0 30px 100px;}     
+
+#content .animal .snow{position: absolute;width: 90%;}
+#content .animal{overflow: hidden; padding: 50px 0 100px;}
+#content ul{width: 90%; margin: 0 auto; 
+    display: grid; 
+    grid-gap:20px;
+    grid-template-columns:repeat(4,1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    'a b c d'
+    'a f c g'
+    'e f h h'
+    'i i j k'
+    'l m n n'
+    ;}
+
+#content .animal li:nth-child(1){grid-area: a;}
+#content .animal li:nth-child(2){grid-area: b;}
+#content .animal li:nth-child(3){grid-area: c;}
+#content .animal li:nth-child(4){grid-area: d;}
+#content .animal li:nth-child(5){grid-area: e;}
+#content .animal li:nth-child(6){grid-area: f;}
+#content .animal li:nth-child(7){grid-area: g;}
+#content .animal li:nth-child(8){grid-area: h;}
+#content .animal li:nth-child(9){grid-area: i;}
+#content .animal li:nth-child(10){grid-area: j;}
+#content .animal li:nth-child(11){grid-area: k;}
+#content .animal li:nth-child(12){grid-area: l;}
+#content .animal li:nth-child(13){grid-area: m;}
+#content .animal li:nth-child(14){grid-area: n;}
+
+
+#content .animal img{display: block; width: 100%; height: auto;
+object-fit: cover; object-position:center;transition: all .5s ease-out;
+border-radius: 20% 10% 32% 5%/9% 20% 7% 30%; border: solid 3px #ffffff; }
+
+
+#content .animal li{display: block; position: relative; transition: all .5s; margin: 0 auto;
+    border-radius: 20% 10% 32% 5%/9% 20% 7% 30%; background-image:url(../images/bh1.jpeg);
+    background-size: cover;padding: 15px;}
+#content .animal li:hover{filter: contrast(130%); transform: scale(1.05);}
+#content .animal li:hover span{transform: scale(1.5); right:10%; opacity: 1;}
+#content .animal li span{display: block; position: absolute; right: 9%; bottom: 17%;
+    color: #fff; font-size: 1.56rem; font-family:ClimateCrisisKR_bold;;
+    text-stroke: 1.5px #000000; transition: all .5s; opacity: 0;} 
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+    /* 일반 pc */
+    @media screen and (max-width:1280px) {
+        #content ul{width: 90%;} 
+        #content .animal li:hover span{transform: scale(1.2); }
+    }
+
+
+
+
+
+
+
+
+
+     /* 일반 테블릿 */
+     @media screen and (max-width:1024px) {
+  
+        #content .animal li:hover span{transform: scale(1.1); }
+        #content ul{
+            grid-gap:25px;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-areas: 
+            'a b c'
+            'a f c'
+            'e f d'
+            'i i j'
+            ;}
+
+
+            #content .animal li:nth-child(7){display: none;}
+            #content .animal li:nth-child(8){display: none;}
+            #content .animal li:nth-child(11){display: none;}
+            #content .animal li:nth-child(12){display: none;}
+            #content .animal li:nth-child(13){display: none;}
+            #content .animal li:nth-child(14){display: none;}
+
+}
+
+
+
+
+    /* 소형 테블릿 */
+     @media screen and (max-width:768px) {
+
+
+#content .titleimg{width: 100%; margin: -17px auto; position: absolute; z-index: 3;}
+
+#content .animal h3{padding: 50px 0 30px;}
+#content .animal{background:#000000;}
+#content .animal li{background-image:none; background-color: #5dbbff; padding: 5px;}
+#content ul{grid-gap:20px;}
+#content .animal img{border:none;  filter: contrast(110%);}
+
+#content .animal li span{display: block; position: absolute; right: 10%; bottom: 17%;
+    color: #fff; font-size: 1.3rem; text-shadow: none; font-family: ClimateCrisisKR_mid;
+    text-stroke: .7px #000000;} 
+
+#content .animal li:nth-child(5) span{margin-left: 35%; text-align: right;}    
+#content .animal li:nth-child(4) span{margin-left: 35%; text-align: right;}
+#content .animal h3{text-align: center; color: #000000; text-stroke: .5px #ffffff;}
+
+}
+
+
+
+
+ 
+
+
+
+
+
+
+     /* 모바일 */
+     @media screen and (max-width:640px) {
+
+        #content ul{ width: 90%;
+            grid-template-columns:repeat(2,1fr);
+            grid-template-areas: 
+            'a b'
+            'a f'
+            'e f'
+            'i i';}
+
+            #content .animal li:nth-child(3){display: none;}
+            #content .animal li:nth-child(4){display: none;}
+            #content .animal li:nth-child(10){display: none;}
+          
+        
+        
+            #footerArea::before{content: ''; background-color:transparent}
+            #footerArea::after{content: ''; width: 100%;
+                height: 380px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: -2;
+                background:#000;
+                background-size: cover;}
+        
+        
+        }
+
+     

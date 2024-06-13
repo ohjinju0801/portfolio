@@ -1,0 +1,102 @@
+/* 와이드 pc  */
+
+#imgBG{display: block;}
+	
+#content{width:100%; margin:0 auto; height:auto; background:rgba(0,0,0,.85);position: relative;}
+#content h2{position: absolute; top: -500px; font-family: ClimateCrisisKR_bold; text-stroke: .5px #0095ff;
+width: 100%; text-align: center; font-size: 3em; color: rgb(255, 255, 255);}
+
+
+
+
+
+#content section{overflow: hidden;}
+#content ul{width: 80%; margin: 0 auto; 
+    display: grid; 
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap:10px;
+}
+#content section:nth-of-type(2) ul li:nth-of-type(1){order: 2;}
+#content section:nth-of-type(2) ul li:nth-of-type(2){order: 1;}
+
+#content section:nth-of-type(4) ul li:nth-of-type(1){order: 2;}
+#content section:nth-of-type(4) ul li:nth-of-type(2){order: 1;}
+
+#content h3{font-size: 2.56rem; color: #000000; text-stroke: .2px #ffffff;
+     padding: 50px; font-family:ClimateCrisisKR_bold;}
+
+#content section:nth-child(odd) h3{text-align: right;}
+
+#content ul li{padding: 20px;}
+#content ul li img{width: 100%; height:100%; border: 2px solid #fff;
+  object-fit: cover;object-position: center; transition: all .5s ease-out;}
+#content ul li img:hover{
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px #9beeff, 0 0 25px #f5ffab;}
+#content li dl{display: block;
+    color: #fff; text-align: center; height: auto; padding: 20px; vertical-align: top;}
+#content li dl dt{font-size: 2rem; font-family: ClimateCrisisKR_mid; color: #BAE3FE;
+    margin-bottom: 30px;}
+#content li dl dd{text-align: justify; font-size: 1.20rem;}
+#content .mountain1{margin: 0 auto; width: 100%; opacity: 90%;}
+
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+    #content ul{width: 90%;}
+
+    
+
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    #content li dl dt{ margin-bottom: 20px;}
+    #content li dl dd{font-size: 1.1rem;}
+}
+
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+    #content  h3{text-align: center; padding: 30px; font-size: 2.56rem;} 
+    #content section:nth-child(odd) h3{text-align: center;}
+
+    #content section{background-color: #000000; background-image: url(../images/book.jpg);}
+
+    #content section ul{grid-template-columns:1fr;}
+    #content section:nth-of-type(2) ul li:nth-of-type(1){order: 1;}
+    #content section:nth-of-type(2) ul li:nth-of-type(2){order: 2;}
+    
+    #content section:nth-of-type(4) ul li:nth-of-type(1){order: 1;}
+    #content section:nth-of-type(4) ul li:nth-of-type(2){order: 2;}
+    #content section li dl{padding: 20px 0;}
+    
+    #content .mountain1{margin: 0 auto; width: 100%; opacity: 90%;}
+    #content li dl dt{color: #f5ffab; padding: 20px;}
+    #content .mountain1{margin: 0 auto; width: 100%; opacity: 90%;}
+    
+   #footerArea::before{content: ''; background-color:transparent}
+    #footerArea::after{content: ''; width: 100%;
+        height: 380px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -2;
+        background:url(../images/book.jpg) center bottom ;
+        background-size: cover;}
+     
+} 
+
+
+
+
+
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+	#content li dl dd{font-size: 1rem;}
+}

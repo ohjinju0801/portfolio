@@ -1,0 +1,476 @@
+/* 와이드 pc  */
+
+.videoBox{}
+
+#content{ width:100%; margin:0; height:auto; background:rgba(0,0,0,.85);  }
+#content h3{font-size: 3rem; text-align: center; color: #FFFDCD;
+    margin: 100px 0 70px; font-family:ClimateCrisisKR_mid;}
+
+/* directions */
+
+#content .directions{overflow: hidden; color: #fff; position: relative;}
+#content .directions>p{font-size: 1.25rem; width: 80%; margin: 0 auto;text-align: justify; word-break: break-all;
+  line-height: 1.5em; margin-bottom: 50px;}
+#content .directions ul{width: 90%; margin: 0 auto 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+  grid-template-rows: auto;
+  grid-gap: 30px 20px;
+}
+#content .directions li div{position: relative; margin-bottom: 30px; overflow: hidden;}
+#content .directions li img{width: 100%; height: auto;
+   object-fit: cover; object-position:center;}
+#content .directions li::before div p{display: '';}
+#content .directions li p{position: absolute; width: 100%; font-size: 1rem;
+  left: 0; bottom: -200px; padding:30px 20px ;box-sizing: border-box;text-align: justify; word-break: break-all;
+  background: rgba(0,0,0,.7); transition: all .5s;}
+#content .directions li:hover p{bottom: 0;}
+#content .directions li strong{display: block;  font-family:ClimateCrisisKR_mid;
+   text-align: center; font-size: 1.56rem; color: #99C7FF;}
+#content .directions .more{
+    color: #fff;
+    width: 90px;
+    padding: 5px;
+    background: #99C7FF;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute; right: 5%; top: 100px;
+}
+
+
+/* attraction */
+#content .attraction{overflow: hidden; color: #fff;}
+#content .attraction ul{
+  width: 90%; margin: 0 auto 100px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  grid-template-rows: auto;
+  grid-gap:15px;
+}
+#content .attraction li{position: relative; overflow: hidden;}
+#content .attraction li span{color: #fffcae; position: absolute; line-height: 1em;
+   width: 100%; left:0; top: 40%; display: block;
+  text-align: center; font-size: 2.5rem; font-family:ClimateCrisisKR_mid;}
+#content .attraction li img{width: 100%; height: 100%; object-fit: cover;
+   object-position: center; transition: all .5s;}
+#content .attraction li:hover img{transform: scale(1.2);}
+#content .attraction li p{line-height: 1.5em; font-size: 1rem; margin: 30px 20px 0; text-align: justify; word-break: break-all;}
+#content .attraction .more{color: #fff; width: 90px; padding:5px; background: #99C7FF;
+  margin: 30px auto; text-align: center; border-radius: 10px;}
+#content .attraction li:nth-of-type(5){position: relative;}
+#content .attraction li:nth-of-type(5) img{position:absolute; height:120%; bottom: 0; left: 0;}
+
+
+
+
+/* about */
+#content>div.about {
+  height: auto;
+  background: url(../images/mountains.jpg) no-repeat fixed center;
+  background-size: cover;
+  padding: 100px 70px;}
+
+
+#content .about p{font-size: 2.50rem; color: #fff; text-align: center;
+  font-family:ClimateCrisisKR_bold; font-weight: 500;}
+
+
+
+
+
+/* animal */
+#content .animal{overflow: hidden; padding: 100px 5%;}
+#content .animal ul img{width: 100%; height: 100%; object-fit: cover;object-position: center; filter: contrast(115%);}
+#content .animal ul li{overflow: hidden;transition: all .5s ease-out;}
+#content .animal ul li:hover{ box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px #aff2ff, 0 0 25px #f1ff8b;}
+#content .animal ul li img{transition: all .5s ease-out;}
+#content .animal ul li:hover img{transform: scale(1.1);}
+
+
+#content .animal h3{float: left; margin:0;}
+#content .animal p{color: #fff; margin-left: 277px; font-size: 1.2rem; line-height: 1.5em; text-align: justify; word-break: break-all;}
+#content .animal .more2{clear: both; color: #fff; width: 90px; padding: 5px; text-align: center; 
+  font-size: 1.00rem; background: #99C7FF; border-radius: 10px; margin: 30px 0 50px;}
+#content .animal ul{width: 90%; margin: 0 auto; 
+  display: grid; 
+  grid-template-columns: repeat(4, 3fr);
+  grid-auto-rows: auto;
+  grid-gap: 10px; 
+  grid-template-areas: 
+  'a b c d'
+  'a f c h'
+  'e f g h';}
+
+  
+#content .animal li:nth-child(1){grid-area: a;}
+#content .animal li:nth-child(2){grid-area: b;}
+#content .animal li:nth-child(3){grid-area: c;}
+#content .animal li:nth-child(4){grid-area: d;}
+#content .animal li:nth-child(5){grid-area: e;}
+#content .animal li:nth-child(6){grid-area: f;}
+#content .animal li:nth-child(7){grid-area: g;}
+#content .animal li:nth-child(8){grid-area: h;}
+
+
+/* Signature */
+#content .signature ul img{display: block; position: relative; width: 100%; height: 100%; object-fit: cover;
+  object-position: center; transition: all .5s ease-out;}
+#content .signature ul img:hover{display: block; position: relative; width: 100%; height: 100%;
+   object-fit: cover;
+  object-position: center; box-shadow:0 0 5px rgb(255, 0, 0), 0 0 35px orangered;  }
+  
+#content .signature span{position: absolute; z-index: 2;}
+#content .signature p{color: #fff; font-size: 1.1rem; line-height:1.8em;text-align: justify ;
+  word-break: break-all;  margin-bottom: 15px;}
+#content .signature .more3{width: 90px; padding: 5px; text-align: center; font-size: 1.00rem;
+   background: #99C7FF; border-radius: 10px; margin: 0 auto; color: #fff; margin-top: 20px;}
+#content .signature ul{width: 90%; margin: 0 auto 100px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto;
+  grid-gap: 30px;
+  grid-template-areas: 
+  'a b b'
+  'c d e';
+   } 
+#content .signature li{position: relative;}
+#content .signature li:nth-child(1){grid-area: a;}
+#content .signature li:nth-child(2){grid-area: b;}   
+#content .signature li:nth-child(3){grid-area: c;}   
+#content .signature li:nth-child(4){grid-area: d;}   
+#content .signature li:nth-child(5){grid-area: e;} 
+#content .signature li span{display: block; position: absolute; bottom: 30px; right:30px;
+   color: #fff; font-size: 2.5rem; font-family: 'Roboto', sans-serif; opacity: .9;
+   text-shadow: 0 0 20px red;}  
+
+
+
+/* about2 */
+#content>div.about2 {
+  height: auto;
+  background: url(../images/mountains3.jpg) no-repeat fixed center;
+  background-size: cover;
+  padding: 100px 72px;
+  }
+
+#content .about2 p{font-size: 2.50rem; color: #fff; text-align: center;
+  font-family:ClimateCrisisKR_bold; font-weight: 500;}
+
+
+/* climate영역 */
+
+#content .climate ul img{width: 100%; height: 100%;
+    transition: all .5s;
+    object-fit: cover;
+    object-position: center; display: block;}
+#content .climate ul li:hover img{transform:scale(1.05); filter: contrast(150%); border-radius: 30px;}
+#content .climate ul li:nth-child(even) img{margin-top: 80px;}  
+
+#content .climate ul{display: grid; 
+  grid-gap: 20px;
+   width: 80%; margin: 0 auto; padding: 10px;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;}
+#content .climate li{margin-bottom: 100px;}
+
+#content .climate p{line-height: 1.8rem; margin: 0 auto;
+   font-size: 1.15rem; color: #fff; width: 80%; text-align: justify;
+   padding-top: 20px; 
+   }
+   #content .climate p strong{font-size: 2.5rem; font-weight:500;
+    position: relative; top: -10px;line-height: 1.5rem; color: rgb(241, 255, 159);}
+
+    #content .climate .more5{width: 90px; padding: 10px; text-align: center; font-size: 1.00rem;
+      background: #99C7FF; border-radius: 10px; margin: 0 auto; color: #fff; margin-top: 20px;}
+    
+   
+   
+
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+}
+
+
+
+
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+
+/* directions */
+
+#content .directions p{font-size: 1rem; font-weight: 300;}
+#content .directions li{font-size: 1.3rem;}
+#content .directions li p{display: none;}
+#content .directions .more {font-size: 1rem; width: 70px; padding: 5px; border-radius: 5px;}
+
+
+
+/* attraction */
+#content .attraction li p{margin: 10px 10px 10px 10px;}
+#content .attraction ul{
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+  'b b'
+  'a c'
+  'e e'
+ ;}
+
+
+#content .attraction li:nth-child(1){grid-area: a;}
+#content .attraction li:nth-child(2){grid-area: b;}
+#content .attraction li:nth-child(3){grid-area: c;}
+#content .attraction li:nth-child(5){grid-area: e;}
+#content .attraction li:nth-child(4){display: none;}
+#content .attraction li:nth-child(6){display: none;}
+#content .attraction li:nth-of-type(5) img{position: static; height: 200px;}
+
+
+
+/* animal */
+#content .animal p{font-size: 1rem;}
+#content .animal ul{width: 100%; margin: 0 auto; 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 5px; 
+  grid-template-areas: 
+    'a b d'
+    'a b h'
+    'a f h'
+    'e f h'
+    ;}
+  
+  #content .animal li:nth-child(7){display: none;}
+  #content .animal li:nth-child(3){display: none;}
+
+
+
+
+
+
+
+
+/* signature */
+#content .signature p{font-size: 1rem; line-height: 1.65rem;}
+#content .signature li span{font-size: 2rem;}
+
+
+/* climate */
+#content .climate p{font-size: 1rem; line-height: 1.65rem;}
+#content .climate p strong{top:-15px}
+
+/* about2 */
+#content .about p{font-size: 2rem;}
+#content .about2 p{font-size: 2rem;}
+}
+
+
+
+
+
+
+
+
+/* 소형 테블릿 */
+
+@media screen and (max-width:768px) {
+
+
+
+
+/* directions */
+  #content .directions ul{width: 90%; 
+  grid-template-columns: 1fr;}
+  #content .directions li:nth-child(3){display: none;}
+  #content .directions li:nth-child(4){display: none;}
+  #content .directions .more{font-size: 1.1rem;
+    color: #fff;
+    width: 90px;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 10px;
+ right: 40%; top: 230px;
+}
+
+#content .directions li strong{font-size: 1.56rem;}
+
+
+
+  
+  /* Signature */
+  #content .signature{padding: 30px 0;}
+  #content .signature ul{
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:10px;
+    grid-template-areas: 
+    ' b a'
+    ' c e';
+     } 
+  
+  #content .signature li:nth-child(4){display: none;}   
+  #content .signature li p:nth-child(2){display: none;}
+  #content .signature .p2{display: none;}
+  #content .signature li span{font-size: 2rem;} 
+  #content h3{padding: 30px;}
+  #content .signature p{margin: 0 5px 5px;}
+    
+  
+
+  /* climate영역 */
+  
+  #content .climate ul{display: grid; 
+  grid-gap: 30px;
+  width: 90%; height: 30%; margin: 0 auto 30px; padding: 10px;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+  'a b'
+  'c d';
+  }
+
+  #content .climate li{margin-bottom: 10px;}
+  #content .climate ul li:nth-child(even) img{margin-top: 0;}
+  #content .climate li:nth-child(1){grid-area: a;}
+  #content .climate li:nth-child(2){grid-area: b;}  
+  #content .climate li:nth-child(3){grid-area: c;}  
+  #content .climate li:nth-child(4){grid-area: d;}  
+  #content .climate{background-color: #000; padding: 30px;}
+
+
+
+/* animal */
+#content .animal h3{float: none; margin: 100px 0 0px;}
+#content .animal p{margin: 0 auto;font-size: 1rem;}
+#content .animal .more2{margin: 50px auto;}
+#content .animal{background: url(../images/bear.jpg)no-repeat center;
+  background-size: cover; padding: 30px 30px;}
+
+
+
+
+
+
+
+
+
+
+/* attraction */
+#content .attraction{background-color: #000;}
+#content .attraction li p{line-height: 1.5em; font-size: 1rem;
+   margin: 50px 20px 0; text-align: justify;}
+#content .attraction ul{
+  grid-template-areas: 
+  'b b'
+  'a a'
+  'c c'
+  'e e'
+  ;
+}
+
+#content .attraction li:nth-child(1){grid-area: a; height: 150px;}
+#content .attraction li:nth-child(2){grid-area: b;}
+#content .attraction li:nth-child(3){grid-area: c; height: 150px;}
+#content .attraction li:nth-child(5){grid-area: e; height: 150px;}
+#content .attraction li:nth-child(4){display: none;}
+#content .attraction li:nth-child(6){display: none;}
+#content .attraction h3{margin-bottom: -20px;}
+
+
+
+
+
+
+
+
+
+
+#content .about p{font-size: 2rem; line-height: 2.5rem;}
+#content .about2 p{font-size: 1.8rem;}
+
+}
+
+
+
+
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+
+  #content h3{font-size: 2.13rem;} 
+
+/* animal */
+
+#content .animal ul{
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 5px; 
+  grid-template-areas: 
+    'a a f f'
+    'e e b b'
+    ;}
+  
+#content .animal li:nth-child(8){display: none;}
+#content .animal li:nth-child(4){display: none;}
+#content .animal li img{border-radius: 10px;}
+
+
+
+
+
+#content .attraction h3{margin-bottom: -15px;}  
+
+
+
+/* directions */
+#content .directions p{width: 90%;}
+#content .directions .more { position: absolute; right: 50%;transform: translateX(50%) ;top: 130px;}
+#content .attraction li p{width:auto;margin: 50px 0 0;}
+#content .attraction li:nth-child(5){display: none;}
+
+
+
+
+/* Signature */
+#content .signature ul{
+  grid-template-columns: repeat(2,1fr);
+  grid-gap:15px;
+  grid-template-areas: 
+  ' a a'
+  ' b c'
+  ' d e';
+   }   
+#content .signature li:nth-child(4){display: block;} 
+#content .signature .more3{margin-bottom: 30px; background: rgb(255, 0, 0);}
+#content .signature li span{font-size: 1.2rem;bottom: 10px;right: 10px;}
+#content .signature li img{border-radius: 20px 0 20px;}
+
+
+
+
+/* climate */
+#content .climate ul{
+  grid-gap: 20px;
+  width: 100%;}
+#content .climate p:nth-of-type(2){display: none;}
+#content .climate li{width: 100%;}
+#content .climate p{font-size: 1rem;}
+#content .climate li:nth-child(1),#content .climate li:nth-child(2){display: none;}
+}
+
+
+/* directions */
+#content .directions .more{
+ 
+ margin-top: 75px;
+ 
+}

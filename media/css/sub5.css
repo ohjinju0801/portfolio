@@ -1,0 +1,162 @@
+/* 와이드 pc  */
+#imgBG{display: block;}
+
+
+#content{width:100%; margin:0 auto; height:auto;background: #fff;position: relative;}
+#content h2{position: absolute; top: -500px; font-family: ClimateCrisisKR_bold;
+    width: 100%; text-align: center; font-size: 3em; color: rgb(255, 255, 255);text-stroke: .5px #0095ff;}
+
+#content .bear{overflow: hidden;}
+#content .bear ul{width: 95%; margin: 0 auto; padding: 100px 0; 
+display: grid;
+grid-template-columns:repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap:15px;
+    grid-template-areas: 
+    'a b c'
+    'd d d'
+    'e f g';
+}
+
+#content .bear li:nth-child(1){grid-area: a;}
+#content .bear li:nth-child(2){grid-area: b;}
+#content .bear li:nth-child(3){grid-area: c;}
+#content .bear li:nth-child(4){grid-area: d; padding: 10px 0; text-align: justify; word-break: break-all; line-height: 1.5em;}
+#content .bear li:nth-child(5){grid-area: e;}
+#content .bear li:nth-child(6){grid-area: f;}
+#content .bear li:nth-child(7){grid-area: g;}
+
+#content .bear li img{display: block; width: 100%; height: auto;
+    object-fit: cover; object-position:center; }
+#content .bear li:hover img{display: block; width: 100%; height: auto;
+object-fit: cover; object-position:center; filter: grayscale(100%); transition: all .5s ease-out;}    
+
+
+    #content>div.waterbear {
+        height: auto;
+        background: url(../images/sub5_bear.jpg) no-repeat fixed center;
+        background-size: cover;
+        padding: 100px 100px;
+        }
+      
+      #content .waterbear p{font-size: 3.13rem; color: #fff;
+        font-family:ClimateCrisisKR_mid; word-break: break-all;}
+
+
+
+#content .font{overflow: hidden;}
+#content .font h3{font-family: ClimateCrisisKR_bold; font-size: 2.16rem; text-align: justify;word-break: break-all;
+    padding:50px 100px 10px; color: black;}
+#content .font p{text-align: justify; word-break: break-all; width: 80%; padding: 10px 100px 50px;}
+#content .font ul{width: 90%; margin: 0 auto; padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: auto;
+    grid-gap:15px;
+    }
+#content .font ul li{ transform: rotateY(0); transition: all 2s;}
+#content .font ul img{display: block; width: 100%; height: auto;
+object-fit: cover; object-position:center; border-radius: 20px;}
+#content .font ul li:hover{transform: rotateY(360deg);}
+#content .font ul li:nth-child(even){margin-top: 80px;}
+
+
+
+
+#content .font div{width: 90%; margin: 0 auto; padding: 50px 0;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap:15px;
+    }
+#content .font div img{display: block; width: 100%; height: auto;}
+#content .font div img:hover{display: block; width: 100%; height: auto; border-radius: 350px;    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px #9beeff, 0 0 25px #f5ffab;
+      transition: all .5s;}
+   
+    #footerArea::before{content: ''; background-color:transparent}
+    #footerArea::after{content: ''; width: 100%;
+        height: 380px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -2;
+        background:rgb(255, 255, 255);
+        background-size: cover;}
+        
+
+
+
+
+
+        /* 일반 pc */
+@media screen and (max-width:1280px) {
+    #content ul{width: 80%;}
+
+    
+
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    #content .bear ul{
+        grid-template-columns:repeat(2, 1fr);
+            grid-gap:15px;
+            grid-template-areas: 
+            'a c'
+            'd d'
+            'f g';
+        }
+        
+        #content .bear li:nth-child(2){display: none;}
+        #content .bear li:nth-child(5){display: none;}
+        #content .waterbear p{font-size: 2.15rem;}  
+    
+        #content .font h3{font-family: ClimateCrisisKR_bold;font-size: 1.56rem; padding:50px 50px 10px;}
+        #content .font p {width: 90%; padding: 10px 50px 50px;}
+    
+        #content .font ul{width: 80%;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap:20px;
+            }
+    
+        #content .font div{width: 90%;
+            grid-template-columns:repeat(1, 1fr);
+            grid-gap:20px;
+                }
+ 
+}
+
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+ 
+       
+} 
+
+
+
+
+
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+    #content .bear ul{
+        grid-template-columns:repeat(2, 1fr);
+            grid-gap:15px;
+            grid-template-areas: 
+            'a c'
+            'd d'
+            'f g';
+        }
+
+        #content .bear li:nth-child(6){display: none;}
+        #content .bear li:nth-child(7){display: none;}
+
+
+
+        #content .font ul li:nth-child(3){display: none;}
+        #content .font ul li:nth-child(4){display: none;}
+
+}

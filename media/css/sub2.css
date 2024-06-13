@@ -1,0 +1,266 @@
+/* 와이드 pc  */
+#imgBG{display: block;}
+	
+#content{width:100%; margin:0 auto; height:auto; background:rgba(0,0,0,.85);position: relative;}
+#content h2{position: absolute; top: -500px; font-family: ClimateCrisisKR_bold;
+width: 100%; text-align: center; font-size: 3em; color: rgb(255, 255, 255);text-stroke: .5px #0095ff;}
+#content h3{font-family:ClimateCrisisKR_bold; padding: 30px;
+    font-size: 2.56rem; color: #fff; text-align: center;}
+
+/*Hot Springs*/
+
+#content .springs{overflow: hidden; padding: 100px 5%}
+#content .springs ul{width: 100%; margin: 0 auto; 
+    display: grid; 
+    grid-template-columns:repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap:20px;
+    grid-template-areas: 
+    'a a a'
+    'b c d';}
+
+#content .springs li:nth-child(1){grid-area: a;}
+#content .springs li:nth-child(2){grid-area: b;}
+#content .springs li:nth-child(3){grid-area: c;}
+#content .springs li:nth-child(4){grid-area: d;}
+#content .springs p{color: #fff; line-height: 1.5em;text-align: justify;  padding: 0 20px 50px;}
+
+
+
+#content .springs img{display: block; width: 100%; height: auto;
+    object-fit: cover; object-position:center;transition: all .5s ease-out;}
+
+    #content .springs img:hover{width: 100%; height: auto;
+        object-fit: cover; object-position:center;box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 15px #9beeff, 0 0 30px #f5ffab;}    
+
+
+/* aurora */
+#content .aurora{overflow: hidden; padding: 100px 0 80px; background-image: url(../images/auroraback.jpg);
+    background-size: cover;}
+#content .aurora ul{width:95%; margin: 0 auto; 
+    display: grid; 
+    grid-template-columns:repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-gap:15px;
+    grid-template-areas: 
+    'a a b b'
+    'c d e f';}
+
+
+#content .aurora li:nth-child(1){grid-area: a;}
+#content .aurora li:nth-child(2){grid-area: b;}
+#content .aurora li:nth-child(3){grid-area: c;}
+#content .aurora li:nth-child(4){grid-area: d;}
+#content .aurora li:nth-child(5){grid-area: e;}
+#content .aurora li:nth-child(6){grid-area: f;}
+
+#content .aurora img{width: 100%; height: auto; transition: all .5s ease-out;
+    object-fit: cover; object-position:center;}
+#content .aurora img:hover{box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 15px #9beeff, 0 0 30px #f5ffab;}
+#content .aurora dl{margin-top: 50px;}    
+#content .aurora dt{font-family:ClimateCrisisKR_bold; margin-bottom: 30px;
+    font-size: 2.56rem; color: #fff; text-align: center;}
+#content .aurora dd{text-align: justify; color: #fff;}
+
+
+/* igloo */
+#content .igloo{overflow: hidden; padding: 100px 0 80px;}
+#content .igloo ul{width:90%; margin: 0 auto; 
+    display: grid; 
+    grid-template-columns:repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-gap:20px;
+    grid-template-areas: 
+    'a b'
+    'c d';}
+
+
+#content .igloo li:nth-child(1){grid-area: a;}
+#content .igloo li:nth-child(2){grid-area: b;}
+#content .igloo li:nth-child(3){grid-area: c;}
+#content .igloo li:nth-child(4){grid-area: d;}
+
+#content .igloo img{width: 100%; height: auto;
+    object-fit: cover; object-position:center; transition: all .5s ease-out;}
+
+#content .igloo img:hover{box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 15px #9beeff, 0 0 30px #f5ffab;}
+
+
+#content .igloo p{color: #fff; line-height: 1.5em;
+    text-align: justify; padding: 0 50px 50px;}    
+
+
+/* stonehenge */
+#content .stonehenge{overflow: hidden;
+    background-image: url(../images/stone1.jpg); padding-bottom: 50px;
+    background-size: cover;
+    margin: 0 auto;  width: 100%; height: auto;}
+#content div{padding-top: 90px;}
+#content .stonehenge p{color: #ffffff; 
+    padding: 30px 30px; text-align: justify;}
+
+
+
+/* dogtrain */
+
+
+#content .dogtrain{overflow: hidden; padding: 100px 20px;}
+#content .dogtrain ul{width:95%; margin: 0 auto;
+    display: grid; 
+    grid-template-columns:1fr 1.5fr 1fr;
+    grid-auto-rows: auto;                                                                                                                                                                    
+    grid-gap:20px;}
+
+#content .dogtrain ul li img{width: 100%; height: auto;
+        object-fit: cover; object-position:center;transition: all .5s ease-out; }    
+
+#content .dogtrain li img:hover{ box-shadow: 0 0 5px rgb(255, 255, 255),
+     0 0 10px #9beeff, 0 0 25px #f5ffab;
+    transform: scale(1);}
+       
+
+#content .dogtrain p{color: #fff; text-align: justify; padding:0 50px 50px;}       
+  
+
+
+
+
+
+
+
+
+
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+    #content .aurora dl{margin-top: 20px;}    
+    #content div{padding-top: 70px;}
+
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    #content .igloo ul{width:90%;  grid-gap:10px;}
+    #content .stonehenge p{padding: 10px 30px;}
+    #content .aurora dl{margin-top: 0;} 
+    #content .aurora dt{ margin-bottom: 15px;}
+    #content .aurora dd{line-height: 1.2em;}
+    #content .aurora ul{width: 90%; grid-gap:10px;}
+
+    #content .dogtrain ul{grid-gap:15px;}
+
+
+
+}
+
+
+ 
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+    #content .springs ul{grid-gap:15px;}
+    #content .springs img{border: solid 2px #fff;}
+
+
+
+
+    #content .stonehenge .p2{display: none;}
+    #content .dogtrain ul{width:90%; grid-gap:10px;}
+    #content .aurora ul{width:95%; margin: 0 auto; 
+        display: grid; 
+        grid-template-columns:repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap:15px;
+        grid-template-areas: 
+        'c  b'
+        'e  f';}
+    
+    
+    #content .aurora li:nth-child(1){display: none;}
+    #content .aurora li:nth-child(2){grid-area: b;}
+    #content .aurora li:nth-child(3){grid-area: c;}
+    #content .aurora li:nth-child(4){display: none;}
+    #content .aurora li:nth-child(5){grid-area: e;}
+    #content .aurora li:nth-child(6){grid-area: f;}
+    #content .aurora img{border: solid 2px #fff;}
+
+
+
+    #content .dogtrain ul{
+        display: grid; 
+        grid-template-columns:1fr;}
+ 
+
+    #content .dogtrain li:nth-child(1){display: none;}
+    #content .dogtrain li:nth-child(2) img{border-radius: 20px; border: solid 2px #fff;}
+    #content .dogtrain li:nth-child(3){display: none;}
+    
+
+
+
+
+/* igloo */
+#content .igloo ul{
+    width:80%;
+    grid-template-columns: 1fr;
+    grid-gap:30px;
+    grid-template-areas: 
+    'a'
+    'b';}
+
+#content .igloo li:nth-child(3){display: none;}
+#content .igloo li:nth-child(4){display: none;}
+
+#content .igloo img{border-radius: 50px 0 50px; border: solid 2px #fff;}
+
+
+
+
+#footerArea::before{content: ''; background-color:transparent}
+#footerArea::after{content: ''; width: 100%;
+    height: 380px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -2;
+    background:rgba(0,0,0,.85);
+    background-size: cover;}
+} 
+
+
+
+
+
+
+
+
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+	#content .springs ul{
+
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-areas: 
+        'a a'
+        'b d';}
+
+    #content .springs li:nth-child(3){display: none;}
+
+    #content .aurora ul{
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-areas: 
+        'b  b'
+        'e  f';}
+    
+   
+#content .aurora li dt{margin-bottom: 30px;}
+#content .aurora li dd{margin-bottom: 30px; padding: 20px;}
+#content .aurora li:nth-child(3){display: none;}
+
+
+}
+
+
