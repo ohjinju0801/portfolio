@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+
+
+/*  font-family: "Noto Sans KR", sans-serif; */
+
+/* 비주얼영역 */
+.visual{width:2000px; position: relative; top: 0; left: 50%; margin-left: -1000px;
+  margin-top:133px;}
+.visual p{position: absolute;color: #fff;  font-family: "MapoAgape"; font-size: 4.38rem; text-align: center; 
+  margin-top: -550px; margin-left: 500px;}
+
+
+/* 본문 콘텐츠 영역 */
+#content{width: 100%; margin: 0 auto;}
+
+#content section{overflow: hidden;}
+#content section h3{font-weight: 700; font-size:3.13rem ; margin: 100px 0 10px;}
+#content section p{font-size: 1.56rem; font-weight: 400;}
+
+#content section .more{font-size: 1.5em;text-align: center; color: #ccc;
+  margin: 20px 0 100px; position: relative; font-weight: 500; transition: all .5s;}
+#content section .more:hover{color: #666;}
+#content section .more span{font-size: 1.3em; position: absolute;top:2px}
+
+
+#content section:nth-of-type(1){width: 2000px; position: relative; left:50%; transform: translateX(-50%)  ;background-image: url(../mainimages/culture_back1.jpg);}
+#content section:nth-of-type(2){width: 2000px;position: relative; left:50%; transform: translateX(-50%)  ;  background: #fd0000;}
+#content section:nth-of-type(3){width: 1200px; margin: 0 auto; }
+#content section:nth-of-type(4){width: 2000px;position: relative; left:50%; transform: translateX(-50%)  ; background: #f8f8f8;}
+#content section:nth-of-type(5){width: 2000px;position: relative; left:50%; transform: translateX(-50%)  ; background: #fd0000;}
+
+#content .culture{position: relative;}
+#content .culture .culture_back{position: absolute;margin-top: -200px;  margin-left: 500px;}
+#content .culture h3{margin-left: 400px;}
+#content .culture p{margin-left: 400px; margin-bottom: 150px;}
+#content .culture li{position: relative; margin-bottom:120px ;}
+#content .culture li>span{position:absolute; left: 320px; top: -110px; 
+  width: 400px; height: 400px;border-radius: 50%;overflow: hidden; ;transition: all .5s ease-out;}
+#content .culture li img{ width: 400px; height: 400px;}
+#content .culture li>span::after{content: '';display: block; width: 400px; height: 400px;border-radius: 50%;
+      background: url(../mainimages/qu.png); position: absolute; left:0; top:0; transition: all .5s;}
+#content .culture li:hover>span::after{content: ''; opacity: 0;}
+#content .culture li div{width: 920px; height: 190px; border: 3px solid red; background: #fff;
+     border-radius: 100px; padding: 40px 30px 40px 200px; margin-left:550px;
+     box-sizing: border-box; transition: all .5s ease-out;}
+#content .culture li dt{font-size:2.50rem ; color: red;margin-bottom: 20px;}
+#content .culture li dt{font-size:2.50rem ; color: red;margin-bottom: 20px;}
+#content .culture li dd{font-size:1.5rem ; display: none;}
+#content .culture li .text2{text-align: center;}
+#content .culture li .text4{text-align: center;}
+
+
+
+#content .culture li .view{font-size:1.5rem ;text-align: center;position: relative; color: #999;}
+#content .culture li .view span{font-size: 1.2em; position: absolute;top: 5px;}
+#content .culture li:nth-child(even)>span{left:auto; right:330px;}
+#content .culture li:nth-child(even) div{margin-left:500px;padding: 30px 0 30px 60px; }
+#content .culture li:nth-child(odd) dd{margin-left: 60px;}
+#content .culture li:nth-child(even) dd{margin-left: 300px;}
+#content .culture li:hover div{background: red; box-shadow: 1px 1px 15px 1px rgba(0,0,0,.5);}
+#content .culture li:hover>span{transform: scale(1.1);}
+#content .culture li:hover dt{display: none;}  
+#content .culture li:hover dd{display: block; color: #fff;}
+#content .culture li:hover .view{display: none;}
+#content .culture li:hover .text_2{margin: 5px 0px 30px 150px;}
+#content .culture li:hover .text_4{margin: 5px 0px 30px 100px;}
+
+
+#content .noodle{padding-bottom: 100px; color: #fff;height: 1000px; position: relative;}
+#content .noodle h3{margin-left: 400px;}
+#content .noodle p{margin-left: 400px; margin-bottom:200px ;}
+#content .noodle dl{width: 400px;margin-left: 400px; }
+#content .noodle dt{font-size: 2rem; margin-bottom: 30px;}
+#content .noodle dd{text-align: justify; line-height: 1.5em; font-size: 1.1rem;}
+#content .noodle>img:nth-of-type(1){position: absolute; top:250px; left: 350px;}
+#content .noodle>img:nth-of-type(2){position: absolute; top:650px; left: 700px;}
+#content .noodle ul{overflow: hidden;position: absolute;top: 250px; left:50%; margin-left: -100px;}
+#content .noodle li{float: left; width: 470px; position: relative; margin-right: 15px;
+      border-radius: 40px; overflow: hidden;}
+#content .noodle li span{display: block; position: absolute; left:40px; bottom: 40px;
+   color: #fd0000; font-size: 2.5em;}
+#content .noodle .more{top: 350px; color:rgba(255,255,255,.7);}
+#content .noodle .more:hover{color:rgba(255,255,255,1);}
+
+
+#content .video {position: relative;}
+#content .video .desc{padding-bottom: 50px;}
+#content .video img{border-radius: 30px; transition: all .5s;}
+#content .video img:hover{transform: scale(.97); box-shadow: 1px 1px 10px 2px rgba(0,0,0,.4);}
+#content .video .youtube_logo{position: absolute; margin-top: 250px;
+   margin-left: -670px; z-index: 30;}
+#content .video ul{margin-bottom: 120px;}
+#content .video p{margin: 20px 0; font-size: 1.8rem;}
+#content .video span{display: block;}
+
+
+#content .notice{}
+#content .notice h3{margin-left: 400px;}
+#content .notice p{margin-left: 400px;font-size: 1.8rem; margin-bottom: 70px;}
+#content .notice ul{width: 1300px;margin: 0 auto 70px;}
+#content .notice li{line-height: 2em; border-bottom: 1px solid #ccc; overflow: hidden;
+       padding: 0 50px; border-radius: 40px 0 40px; transition: all .5s;}
+#content .notice li a{font-size: 1.5em; padding: 30px 0;}
+#content .notice li:hover{background:#fd0000;}
+#content .notice li:hover a{color: #f8f8f8; font-weight: 600;}
+#content .notice li span{float: right; color: #999;}
+#content .notice li:hover span{color: #fff;}
+
+#content .search{ color: #fff; font-weight: 500; position: relative;
+padding-bottom: 150px; z-index: 30;}
+#content .search h3{margin-left: 400px; margin-bottom: 40px;}
+#content .search img{position: absolute; z-index: -10;
+top: 60px; right: 0; bottom: 40px; left: 1000px;}
+#content .search div{width: 1200px; margin: 0 auto; background: #fff; overflow: hidden; 
+  padding: 10px; margin-bottom: 30px; border-radius: 30px; color: #fd0000;
+  box-shadow: 2px 2px 15px 2px rgba(0,0,0,.2);}
+#content .search input{width: 1000px; padding: 15px 30px; font-size: 2em;
+    font-weight: 600; color: #fd0000; border: 0; outline: 0;} 
+#content .search div a{float: right; margin-top: 5px;}
+#content .search div a span{ font-size: 3.7em; color: #999;}
+#content .search>span{font-size: 1.25rem; font-weight: 400; padding: 50px 0 0 400px;}
+
+
+
+
+
+
+

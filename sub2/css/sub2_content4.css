@@ -1,0 +1,28 @@
+#content .box1{overflow: hidden; width: 1200px;}
+#content .box1 .img1{float: left; width: 590px; height: 590px;}
+#content .box1 .img2{float: right;width: 590px; height: 590px;}
+
+#content .box2{overflow: hidden; width: 1200px;}
+#content .box2 .img3{float: left; width:680px; height: 500px;}
+#content .box2 .img4{float: right; width:500px; height: 500px;}
+
+
+#content .box3{overflow: hidden; width: 1200px;}
+#content .box3 .sobox1{float: right; width: 600px; height: 800px;}
+#content .box3 .sobox2{width: 500px; height: 800px;}
+
+#content .box4{overflow: hidden; width: 1200px;}
+#contnet .box4 .img7{float: left; width: 670px; height: 460px;}
+#contnet .box4 .img8{float: right; width: 430px; height: 460px;}
+#contnet .box4 .img9{float: left; width: 430px; height: 460px;}
+#contnet .box4 .img10{float: right; width: 670px; height: 460px;}
+
+
+#content .box5{overflow: hidden; width: 1200px;}
+#contnet .img11{float: left;}
+#content .img12{float: right;}
+
+#content p{font-size: 2.19rem; text-decoration: underline 10px solid #fd0000; margin-bottom: 100px;}
+#content .font1{text-align: right;}
+
+

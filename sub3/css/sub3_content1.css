@@ -1,0 +1,43 @@
+#content img{position: relative; margin-bottom: 100px;}
+#content .box1{position: absolute; width: 300px;
+     margin-top: -400px; margin-left: 50px;
+     text-align: justify;}
+#content .box1 dl{color: #fff;}  
+#content .box1 dl dt{font-size: 1.56rem; margin-bottom: 10px;}
+#content .box1 dl dd{font-weight: 300;} 
+#content .one1{width: 900px; text-align: center; display: flex; gap: 20px;
+     position: absolute; margin-top: -430px; margin-left: 380px; color: #fff;}
+#content .one1 li{width:250px; height: 250px; border: 1px solid red;
+border-radius: 50%;}
+#content .one1 dl{margin-top: 50px;}
+#content .one1 dl dt{font-size: 1.44rem; margin-bottom: 10px;}
+#content .one1 dl dd{font-weight: 300;}
+
+
+
+
+#content .box2{display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 100px; width: 1200px; text-align: center;}
+#content .box2 div{width: 500px; margin-bottom: 20px;}
+#content .box2 dl{font-size: 1.25rem;}
+#content .box2 dl dt{font-size: 1.56rem; text-align: center; margin-bottom: 30px;}
+#content .box2 dl dd{text-align: center; font-size: 1.12rem; font-weight: 300;} 
+
+
+
+#content .light1{display: flex; justify-content: space-between; width:270px;}
+#content .light1 p{font-size: 1.56rem; margin-top: 25px;}
+
+#content .one3{display: flex; 
+     justify-content: space-between; margin: 0 auto; text-align: center;
+   margin-bottom: 150px;}
+
+#content .one3 dl dt{font-size: 1.44rem; font-weight: 500; color: #fd0000;
+      margin-bottom: 30px;}
+#content .one3 dl dd{color: #333; text-align: center;}
+
+
+
+
+
+

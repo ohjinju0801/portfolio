@@ -1,0 +1,26 @@
+/* 회사소개의 공통 css */
+
+/* visual 영역 */
+.visual{width: 2000px; height: 400px; color: #fff; filter: brightness(100%);
+    background: red; position: relative; left: 50%; top: 0; transform: translateX(-50%);}
+    .visual span{font-size: 2rem; display: block; position: absolute; top: 250px; width: 100%; text-align: center;}
+   
+    /* 서브메뉴 영역 */
+    .sub_nav{width: 100%; border-bottom: 1px solid #ccc;}
+    .sub_nav ul{overflow: hidden; width: 1200px; margin: 0 auto;}
+    .sub_nav li{width: 25%; float: left; color: #333; text-align: center; }
+    .sub_nav li a{font-size: 1.3rem; font-weight: 400; padding: 15px 0; transition: all .5s;} 
+    .sub_nav li a:hover, .sub_nav li .current{background: #fd0000; color: #fff; font-weight: 700;}
+   
+    /* title_area 영역 */
+    #content{width: 1200px; margin: 0 auto;}
+    #content .title_area{height: 400px; position: relative;
+   overflow: hidden; margin-bottom: 50px;}
+   #content .title_area .line_map{position: absolute; right: 0; top: 30px;}
+   #content .title_area h2{font-size: 3.5rem; text-align: center; margin-top: 150px; margin-bottom: 20px; position: relative;}
+   #content .title_area h2::before{content: ''; display: block; position: absolute; width: 100%; 
+       text-align: center; top: -50px; font-size: 1rem; color: red;}
+       #content .title_area h2::after{content: ''; display: block; width: 6px; height: 80px; background: red; position: absolute; top: 160px; left: 50%;}    
+   #content .title_area p{font-size: 1.20em; text-align: center;}
+   
+   

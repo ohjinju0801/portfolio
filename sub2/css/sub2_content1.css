@@ -1,0 +1,54 @@
+/* 본문 내용 css */
+.content{}
+.content_area h3{font-size: 3.13rem; color: #fd0000; margin-bottom: 10px;}
+.content_area p{font-size: 1.56rem; color: #333; margin-bottom: 80px;}
+.content_area .box{overflow: hidden; margin-bottom: 80px;}
+.content_area .box .box1{width: 400px; float: left;}
+.content_area .box .box2{width: 400px; float: left;}
+.content_area .box .box3{width: 400px; float: right;}
+
+.content_area .box img{margin-right: 10px; justify-content: space-between;}
+.content_area .box span{font-size: 1.25rem; color: #333;}
+
+.content_area .tumsae_1{overflow: hidden;}
+.content_area .tumsae_1 .list_1{float: left;}
+.content_area .tumsae_1 .list_2{float: right;}
+.content_area .tumsae_1 .list_3{float: left;}
+.content_area .tumsae_1 .list_4{float: right;}
+.content_area .tumsae_1 img{display: block;
+    margin: 0 auto 20px;
+    width: 500px;}
+.content_area .tumsae_1 dl{text-align:center; width: 600px;}
+.content_area .tumsae_1 dl dt{font-size: 2.50rem; color: #fd0000; 
+    font-weight: 400; margin-bottom: 20px;}
+.content_area .tumsae_1 dl dd{font-size: 1.3rem; color: #333; 
+font-weight: 400; margin-bottom: 120px; line-height: 1.8rem; text-align: justify;
+margin: 0 50px 100px;}
+
+
+
+
+
+.content_area .tumsae_2 li{overflow: hidden;margin-bottom:50px ; }
+.content_area .tumsae_2 li img{width: 500px;}
+.content_area .tumsae_2 li:nth-child(odd) img{float: left; margin-right: 50px;}
+.content_area .tumsae_2 li:nth-child(even) img{float: right; margin-left: 50px;}
+.content_area .tumsae_2 li dl dt{font-size: 2rem; color: #fd0000; font-weight: 400;
+  margin-bottom: 20px;}
+.content_area .tumsae_2 li dl dd{font-size: 1.3rem; color: #333; font-weight: 300;}
+.content_area .tumsae_2 li:nth-child(odd) dl{margin-top: 50px;}
+.content_area .tumsae_2 li:nth-child(even) dl{text-align: right; margin-top: 110px;}
+
+.content_area .topping1 h3{margin-top: 100px;}
+.content_area .topping1 p{margin-bottom: 80px;}
+.content_area .topping1 img{width:200px;justify-content: space-between; margin-bottom: 100px;}
+.content_area .topping1 ul{display: flex; justify-content: center; gap: 20px;
+        margin-bottom: 150px;}
+.content_area .topping1 ul li{width: 200px; position: relative;}
+.content_area .topping1 ul li span{display: block; text-align: center; padding: 20px 0;
+ font-size: 1.2em; position:absolute; color: #fff;
+  bottom: 0; left:85px}
+ .content_area .topping1 ul li span::before{content: '';
+ display: block; width: 100px; height: 100px; border-radius: 50%;
+ position: absolute; left:50%; top:-13px; margin-left: -50px;
+ background: #fd9800; z-index: -1;} 

@@ -1,0 +1,14 @@
+#content p{font-size: 1.56rem; font-weight: 400; margin-bottom: 80px; 
+    text-align: justify;}
+#content h3{font-size: 1.88rem; margin-bottom: 50px;
+        text-align: center;}
+
+
+
+#content .box{margin-bottom: 120px;}
+#content .box div{display: flex; flex-flow: row wrap; 
+    justify-content: center; gap: 50px;}
+#content .box img{display: block; width: 300px; height: 200px;
+    border-radius: 10px; transition: all .5s;}
+#content .box img:hover{transform: scale(1.2);}
+#content .box p{text-align: center;margin-top: 50px;}

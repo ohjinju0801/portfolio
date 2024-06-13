@@ -1,0 +1,24 @@
+#content .his{display: flex; justify-content: space-around;}
+#content .his li{position: relative; background-color: #fd0000; border-radius: 50%; 
+    width: 200px; height: 200px; margin-bottom: 100px;}
+#content .his li dl{position: absolute; color: #fff; text-align: center; left: 50%; top: 50px;
+transform: translateX(-50%); width: 1200px;}
+#content .his li dl dt{font-size: 1.56rem; margin-bottom: 10px;}
+#content .his li dl dd{font-size: 1.1rem; font-weight: 300;}
+
+#content .tab_menu{display: flex; margin: 50px auto 100px;width: 800px;}
+#content .tab_menu li{width: 33.33%;}
+#content .tab_menu li a{padding: 15px 0;text-align: center;
+      font-size: 1.2em; font-weight: 500;color: #333;border-bottom: 3px solid transparent;}
+#content .tab_menu li:hover a, #content .tab_menu li .current{
+    color: #fd0000; border-bottom: 3px solid #fd0000;
+}      
+
+#content table{margin-bottom: 150px;}
+#content table tr th{font-size: 1.38rem; background-color: #fd0000; 
+        color: #fff; padding :20px 70px;}
+#content table tr td:first-of-type{font-size: 3.13rem; font-weight: 600;
+                color: #fd0000;
+                text-align: center; width: 100px;}
+#content table tr td:nth-last-of-type(1){font-size: 1.56rem; font-weight: 300; color: #333; text-align: justify;} 
+#content table tr td{width: 1200px; border-bottom:1px solid #ccc; padding: 30px 30px; line-height: 45px;}   

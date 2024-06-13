@@ -1,0 +1,38 @@
+#content .culture{
+  width: 2000px;position: relative;left: 50%;transform: translateX(-50%);
+  background: url(../image/content2/culture_back2.jpg) no-repeat;
+  margin-bottom: 300px;}
+#content .culture .culture_back{position: absolute;margin-top: -200px;  margin-left: 500px;}
+#content .culture h3{margin-left: 400px;}
+#content .culture p{margin-left: 400px; margin-bottom: 150px;}
+#content .culture li{position: relative; margin-bottom:120px ;}
+#content .culture li>span{position:absolute; left: 320px; top: -110px; 
+  width: 400px; height: 400px;border-radius: 50%;overflow: hidden; ;transition: all .5s ease-out;}
+#content .culture li img{ width: 400px; height: 400px;}
+#content .culture li>span::after{content: '';display: block; width: 400px; height: 400px;border-radius: 50%;
+      background: url(../image/content2/qu.png); position: absolute; left:0; top:0; transition: all .5s;}
+#content .culture li:hover>span::after{content: ''; opacity: 0;}
+#content .culture li div{width: 920px; height: 190px; border: 3px solid red; background: #fff;
+     border-radius: 100px; padding: 40px 30px 40px 200px; margin-left:550px;
+     box-sizing: border-box; transition: all .5s ease-out;}
+#content .culture li dt{font-size:2.50rem ; color: red;margin-bottom: 20px;}
+#content .culture li dt{font-size:2.50rem ; color: red;margin-bottom: 20px;}
+#content .culture li dd{font-size:1.5rem ; display: none;}
+#content .culture li .text2{text-align: center;}
+#content .culture li .text4{text-align: center;}
+
+
+
+#content .culture li .view{font-size:1.5rem ;text-align: center;position: relative; color: #999;}
+#content .culture li .view span{font-size: 1.2em; position: absolute;top: 5px;}
+#content .culture li:nth-child(even)>span{left:auto; right:330px;}
+#content .culture li:nth-child(even) div{margin-left:500px;padding: 30px 0 30px 60px; }
+#content .culture li:nth-child(odd) dd{margin-left: 60px;}
+#content .culture li:nth-child(even) dd{margin-left: 300px;}
+#content .culture li:hover div{background: red; box-shadow: 1px 1px 15px 1px rgba(0,0,0,.5);}
+#content .culture li:hover>span{transform: scale(1.1);}
+#content .culture li:hover dt{display: none;}  
+#content .culture li:hover dd{display: block; color: #fff;}
+#content .culture li:hover .view{display: none;}
+#content .culture li:hover .text_2{margin: 5px 0px 30px 150px;}
+#content .culture li:hover .text_4{margin: 5px 0px 30px 100px;}

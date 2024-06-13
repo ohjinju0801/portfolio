@@ -1,0 +1,7 @@
+
+#content #map{width: 1200px; height: 500px; margin-bottom: 100px;}
+#content ul{display: flex; justify-content: space-between; margin-bottom: 150px;}
+#content ul li>span{font-size: 1.4rem; font-weight: 600; color: #333;} 
+#content ul li p{font-size: 1.2rem; font-weight: 400; color: #666; margin:20px 0 50px;}
+
+

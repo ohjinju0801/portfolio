@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+@font-face{
+  font-family:Mapo;
+  src:url('../mainimages/Mapo.eot');
+  src:url('../mainimages/Mapo.woff') format('woff'),
+      url('../mainimages/Mapo.ttf') format('truetype');
+}
+
+/*  font-family: "Noto Sans KR", sans-serif; */
+
+/* 비주얼영역 */
+.visual{width:2000px; position: relative; top: 0; left: 50%; margin-left: -1000px;
+  margin-top:133px; background: #000;}
+
+  .gallery{position:relative;left:0; top:0; overflow:hidden; width:100%; height:900px;}
+  .gallery li{display:none; position: relative;}
+  
+  .gallery img{animation: ani 20s linear infinite;}
+  @keyframes ani {
+      from {transform: scale(1);}
+      to {transform: scale(1.1);}
+  }
+  
+  .gallery li span{ font-family: "Mapo"; font-size: 4.38rem; position: absolute; 
+    left:0; top: 450px; opacity: 0; 
+      font-size: 50px; color: #fff;width: 100%;display: block;
+      text-align: center;  }
+  
+  /* .gallery .link1 span{ left:  100px; top: 300px;} */
+  
+  .dock{width:330px; position:absolute;left: 50%;
+    bottom: 150px;margin-left: -150px;overflow: hidden;padding: 30px 0;}
+  
+  .dock .mbutton{ margin-right:15px; cursor:pointer; 
+      display:block; float:left; width:16px; height:16px;
+     background: rgba(255,255,255,.5); border-radius:8px;
+    transition: all .5s}
+  
+  .dock .ps{ margin-right:15px; margin-top: -5px; cursor:pointer; 
+      display:block; float:left; width:25px; height:25px;
+      }
+  .dock .ps i{font-size: 30px; color:rgba(255,255,255,.8) ;}   
+  
+  .visual .btn{display: block; color: rgba(255,255,255,.8) ; font-size: 1.8em;
+        cursor:pointer; float:left;margin-left: 15px;margin-top: -12px;}
+  
+
+/* 본문 콘텐츠 영역 */
+#content{width: 100%; margin: 0 auto;}
+
+#content section{overflow: hidden;}
+#content section h3{font-weight: 700; font-size:3.13rem ; margin: 100px 0 10px;}
+#content section p{font-size: 1.56rem; font-weight: 400;}
+
+#content section .more{font-size: 1.5em;text-align: center; color: #ccc;
+    margin: 20px 0 100px; position: relative; font-weight: 500; transition: all .5s;}
+  #content section .more:hover{color: #666;}
+  #content section .more span{font-size: 1.3em; position: absolute;top:2px}
+
+#content section:nth-of-type(1){width: 2000px; position: relative; left:50%; transform: translateX(-50%);}
+#content section:nth-of-type(2){width: 2000px;position: relative; left:50%; transform: translateX(-50%); background: #fd0000;}
+#content section:nth-of-type(3){width: 2000px;position: relative; left:50%; transform: translateX(-50%);}
+
+#content section:nth-of-type(4){width: 1600px;margin: 0 auto;}
+#content section:nth-of-type(5){width: 2000px;position: relative; left:50%; transform: translateX(-50%)  ; background: #fcfcfc;}
+
+
+
+/* 1번째 메뉴영역 */
+#content .tumsae_menu h3{text-align: center; color: #fd0000;}
+#content .tumsae_menu p{text-align: center; margin-bottom: 80px;}
+#content .tumsae_menu ul{width: 1600px; display: flex; justify-content: space-between; margin: 0 auto;}
+#content .tumsae_menu ul li{ width: 500px; margin-bottom: 100px;
+gap: 30px ;}
+
+#content  .tumsae_menu ul li{margin-bottom: 100px;}
+#content .tumsae_menu ul li dl{text-align: center; margin-top: 20px;}
+#content .tumsae_menu ul li dt{font-size: 1.88rem; color: #fd0000; font-weight: 400; margin-bottom: 10px;}
+#content .tumsae_menu ul li dd{font-size: 1.2rem; color: #333;text-align: justify; font-weight: 400; margin-bottom: 20px;
+   margin: 0 50px;}
+#content .tumsae_menu p{font-size: 1.25rem;}
+
+
+
+
+/* 2번째 검색영역 */
+#content .search{ color: #fff; font-weight: 500; position: relative;
+  padding-bottom: 150px; z-index: 30;}
+#content .search h3{margin-left: 400px; margin-bottom: 40px;}
+#content .search img{position: absolute; z-index: -10;
+  top: 60px; right: 0; bottom: 40px; left: 1000px;}
+#content .search div{width: 1200px; margin: 0 auto; background: #fff; overflow: hidden; 
+    padding: 10px; margin-bottom: 30px; border-radius: 30px; color: #fd0000;
+    box-shadow: 2px 2px 15px 2px rgba(0,0,0,.2);}
+#content .search input{width: 1000px; padding: 15px 30px; font-size: 2em;
+      font-weight: 600; color: #fd0000; border: 0; outline: 0;} 
+#content .search div a{float: right; margin-top: 5px;}
+#content .search div a span{ font-size: 3.7em; color: #000;}
+#content .search>span{font-size: 1.25rem; font-weight: 400; padding: 50px 0 0 400px;}
+
+
+
+
+
+/* 3번째 영역 */
+#content .tumsae_story img{margin-top: 100px; position: relative;}
+#content .tumsae_story div{border: 5px solid #fd0000; background: #fff; width: 650px; opacity: 80%;
+  position: absolute; margin-top: -900px; margin-left: 1000px; padding: 100px 50px; border-radius: 120px 0;} 
+#content .tumsae_story h4{color: #000; font-size: 2.5rem; font-weight: 500;  margin-bottom: 30px;}
+#content .tumsae_story p{font-size: 1.8rem; margin-bottom: 100px;}
+#content .tumsae_story .more{background-color: #fd0000; color: #fff;
+ font-size: 1.56rem;  padding: 20px; border-radius: 20px; width: 300px; margin-bottom: 20px;}
+ #content .tumsae_story img{margin-bottom: 100px;}
+
+
+
+
+
+
+/* 4번째 유튜브영역 */
+#content .youtube{}
+#content .youtube h3{text-align: center; color: #fd0000; margin-bottom:80px; overflow: hidden;}
+#content .youtube ul{overflow: hidden;}
+#content .youtube ul li{width: 800px; height: 700px; float: left;
+          box-sizing: border-box; padding:15px;position: relative; }
+
+#content .youtube ul li img{border-radius: 40px; width:100% ; margin-bottom: 30px;}
+#content .youtube ul li::after{content: ''; display: block; width: 143px; height: 111px;
+        background: url(../mainimages/video_02.png); position: absolute;
+       top:180px; left: 300px;}
+
+
+
+#content .youtube dl dt{font-size: 1.88rem; font-weight: 500;}
+#content .youtube dl dd{font-size: 1.56rem; font-weight: 400;}
+#content .youtube ul li span{font-size: 1.25rem; font-weight: 400;}
+
+
+
+
+
+
+
+/* 5번째 게시판영역 */
+#content .notice{}
+#content .notice h3{margin-left: 400px;}
+#content .notice p{margin-left: 400px;font-size: 1.8rem; margin-bottom: 70px;}
+#content .notice ul{width: 1300px;margin: 0 auto 70px;}
+#content .notice li{line-height: 2em; border-bottom: 1px solid #ccc; overflow: hidden;
+       padding: 0 50px; border-radius: 40px 0 40px; transition: all .5s;}
+#content .notice li a{font-size: 1.5em; padding: 30px 0;}
+#content .notice li:hover{background:#fd0000;}
+#content .notice li:hover a{color: #f8f8f8; font-weight: 600;}
+#content .notice li span{float: right; color: #999;}
+#content .notice li:hover span{color: #fff;}

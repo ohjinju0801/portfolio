@@ -1,0 +1,28 @@
+#content .world .worldmap01{position: relative; filter: opacity(50%);}
+#content .world .worldmap01:hover{position: relative; filter: opacity(50%); transition: all 3s ease-out; }
+
+#content .world p{position: absolute; text-align:center;  margin-left : 100px; margin-top: -550px;
+     font-size: 1.55rem; color: #666;}
+
+#content h3{color: #fd0000; text-align: center; font-size: 3.13rem; margin-bottom: 50px;}
+#content ul{display:flex; justify-content: space-between; margin-bottom: 200px;}
+
+#content ul li{width: 360px; height: 420px; overflow: hidden;border-radius: 40px; position: relative;}
+#content ul li img{transition: all .5s;} 
+#content ul li:hover img{filter: brightness(40%); transform: scale(1.1);} 
+
+#content ul li dl{width: 360px; height: 420px;position: absolute;left: 0; top:0; text-align: center; }
+
+
+    
+#content ul li dl dt{color: #fff; font-size: 2.55rem; font-weight: 500;margin:150px 0 20px;transition: all .5s;} 
+#content ul li:hover dl dt{margin-top: 100px;}
+#content ul li dl dd{color: #fff; font-size: 1.1rem; font-weight: 400; text-align: justify; margin: 0 30px;
+      line-height: 1.5em; opacity: 0;transition: all .5s;}  
+#content ul li:hover dl dd{ opacity: 1;}
+
+
+#content .box2{position: relative; width: 2000px; height:400px ; left: 50%; top:0; margin-bottom: 100px; overflow: hidden;
+      margin-left: -1000px; background: url(../images/content2/back.jpg); background-attachment: fixed; }
+#content .box2 p{color: #fff; font-size: 1.4rem; font-weight: 400; text-align: center;
+      line-height: 1.5em; margin-top: 100px;}
