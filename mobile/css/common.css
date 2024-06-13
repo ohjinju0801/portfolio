@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* 모바일 코딩 필수 공통영역 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700 ;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+      
+/*  font-family: "Noto Sans KR", sans-serif; */
+/*  font-family: "Roboto", sans-serif; */
+
+* {
+ margin:0;
+ padding:0;
+ -webkit-text-size-adjust:none; }
+html{font-size:14px;} 
+body {
+ color:#333;
+ font-size:14px;
+ font-family: "Noto Sans KR", sans-serif; }
+img, fieldset { border:0; vertical-align:top }
+ul, ol, li, dl { list-style:none; }
+/* h1, h2, h3, h4, h5, h6 {
+ font-size:100%;
+ font-weight:normal; } */
+hr { display:none; }
+a { color:inherit; display: block;}
+a, a:link {
+ color:#333;
+ text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {
+ color:#333;
+ text-decoration:none; }
+em, i, address {
+ font-style:normal;
+ font-weight:normal; }
+legend, caption {
+ display:none;
+ clear:both; }
+input, textarea, select, button, table {
+ font-size:inherit;
+ font-family:inherit;
+ line-height:inherit; }
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input {
+ border-radius:1px;}
+textarea { resize:none; }
+label { cursor:pointer; }
+table{border-collapse: collapse;}
+.hidden,#skipNav{display: block; position: absolute; left:-1000%;top:0; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+
+/* 전체 공통 */
+#wrap{ width:100%; position: relative;  overflow:hidden;}
+
+/* 헤더공통 */
+/* 헤더영역 */
+#headerArea{background:rgba(0,0,0,.75); width: 100%; height: 80px;
+   position: fixed; left:0; top:0; z-index: 100;}
+#headerArea .header_top{overflow: hidden;}
+#headerArea h1{float: left; font-size: 30px;}
+#headerArea h1 a{display: block; color: #fff; text-decoration: none; padding: 20px;}
+
+#headerArea .menu_ham {
+    display: block;
+    float: right;
+    padding-top: 10px;
+    height: 50px;
+    position: relative;
+    z-index:30; 
+    border-radius: 5px;
+}
+#headerArea .menu_ham span {
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    position: relative;
+    text-indent: -9999px;
+    display: block;
+    margin: 26px 15px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+#headerArea .menu_ham span::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    border-radius: 5px;
+    transition: all .3s;
+}
+#headerArea .menu_ham span::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+/* 메뉴가 열렸을때 */
+#headerArea.mn_open .menu_ham span, 
+#headerArea.mn_open .menu_ham span::before, 
+#headerArea.mn_open .menu_ham span::after {
+    background: #fff;
+}
+#headerArea.mn_open .menu_ham span {
+    background: rgba(0,0,0,0);
+}
+#headerArea.mn_open .menu_ham span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+#headerArea.mn_open .menu_ham span::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+#headerArea .modal{width: 100%; height: 100%;
+   position: fixed; left: 0; top:0; background: rgba(0,0,0,.8);
+   display: none;}
+
+/* nav 영역*/
+#gnb{position: absolute; width: 85%;  left:-100%; top:0; 
+    opacity: 0; background: #fff;z-index:20 }
+#gnb .nav_logo{width: 180px; margin: 50px auto;}
+#gnb .nav_logo img{width: 180px;}
+#gnb li{border-top:1px solid #ccc; text-align:center; 
+	        font-weight:bold;}
+#gnb h3 a{font-size: 1.3rem;}
+#gnb li a{display: block; padding: 15px 0} 
+#gnb li ul{background:red; display: none}
+#gnb li ul a{font-size: 1.1rem; color: #fff;}
+#gnb li:last-child{border-bottom:1px solid #ccc}
+
+#headerArea .modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+    z-index: 10;
+}
+
+/* 푸터공통 */
+#footerArea{background: #FFFCDD; padding-bottom: 30px;}     
+#footerArea .footerbox1{background: #B80101; color: #fff;
+    text-align: center; gap: 50px; padding: 10px; font-size: 1.00rem;}     
+.footerbox1 span{padding: 10px;}
+
+#footerArea address{text-align: center; margin-top: 30px; font-size: 1.00rem;}
+#footerArea .copy{text-align: center; margin-bottom: 20px;}
+#footerArea img{width: 219px; margin: 0 auto; display: block;}
+
+#footerArea .move_top {
+    width: 50px;
+    height: 50px;
+    background: #f00;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 50%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 50;
+    right: 10px;
+    bottom: 20px;
+    transition: all .5s ease-out;
+    font-weight: 600;
+    display: none;
+}
+#footerArea .move_top span {
+    display: block;
+    margin-top: 12px;
+}
+
+#wrap .visual>img {
+    width: 100%;
+    filter: brightness(100%);
+    object-fit: cover;
+    object-position: center;
+    height: 250px;
+}
+#wrap  .visual h3{top:50%}
+
+
+
+
+

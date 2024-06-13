@@ -1,0 +1,57 @@
+.visual{position: relative;}
+.visual img{ width: 100%;}
+.visual h3{width: 100%; position: absolute; text-align: center; font-size: 1.88rem; font-weight: 400;
+     z-index: 10;left:0; top:50%; color: #fff;}
+
+.sub_nav{width: 100%; border-bottom: 1px solid #ccc;}
+.sub_nav ul{overflow: hidden; width: 100%; margin: 0 auto;}
+.sub_nav li{width: 33.3333%; float: left; color: #333; text-align: center; }
+.sub_nav li a{font-size: 1.3rem; font-weight: 400; padding: 15px 0; transition: all .5s;} 
+.sub_nav li a:hover, .sub_nav li .current{background: #fd0000; color: #fff; font-weight: 700;}
+
+
+#content .title{text-align: center; overflow: hidden; margin:50px 0 50px 0;}
+#content .title h2{font-size:2rem ;}
+#content .title p{color: #fd0000; font-size: 1.25rem;}
+
+#content ul h3{font-size: 1.56rem; color: #000000; margin-bottom: 30px;}
+
+.collapsible {
+    background-color: #ff9292;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.25rem;
+}
+
+.active,.collapsible:hover {
+    background: #FFFBED;
+    color: #fd0000;
+
+}
+.content {
+    padding:0 18px;
+    box-sizing: border-box;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #FFFBED;
+    font-size: 1.25rem;
+}
+#content .qna{width: 90%; margin: 0 auto 50px; border-radius: 20px; overflow: hidden;
+    border:1px solid #ff9292;}
+.content p{padding: 30px 0;}
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+}

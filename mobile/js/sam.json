@@ -1,0 +1,12 @@
+{
+    "sam": [
+        {"Name":"명동본점","Price":"02-756-5477","Descript":"서울시 중구 명동2가 4-1 2층","Image":"./images/product01.jpg"},
+        {"Name":"대학로점","Price":"02-765-8333","Descript":"서울시 종로구 창경궁로 242-1","Image":"./images/product02.jpg"},
+        {"Name":"충무로점","Price":"0507-1338-6661","Descript":"서울시 중구 퇴계로42길 36","Image":"./images/product03.jpg"},
+        {"Name":"안국역점","Price":"02-745-7098","Descript":"서울시 종로구 율곡로 59","Image":"./images/product04.jpg"},
+        {"Name":"한양대점","Price":"0507-1421-3753","Descript":"서울시 성동구 마조로 35 서전빌딩 1층 105호","Image":"./images/product05.jpg"},
+        {"Name":"홍대놀이터점","Price":"02-332-7167","Descript":"서울시 마포구 와우산로 21길 21 1층","Image":"./images/product06.jpg"},
+        {"Name":"압구정로데오점","Price":"070-8160-2873","Descript":"서울시 강남구 압구정로 336 1층","Image":"./images/product07.jpg"},
+        {"Name":"방학점","Price":"02-956-9333","Descript":"서울시 도봉구 도봉로  147길 5 1층","Image":"./images/product08.jpg"}
+    ]
+}

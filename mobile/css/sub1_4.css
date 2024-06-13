@@ -1,0 +1,27 @@
+.visual{position: relative;}
+.visual img{ width: 100%;}
+.visual h3{width: 100%; position: absolute; text-align: center; font-size: 1.88rem; font-weight: 400;
+     z-index: 10;left:0; top:50%; color: #fff;}
+
+.sub_nav{width: 100%; border-bottom: 1px solid #ccc;}
+.sub_nav ul{overflow: hidden; width: 100%; margin: 0 auto;}
+.sub_nav li{width: 25%; float: left; color: #333; text-align: center; }
+.sub_nav li a{font-size: 1.16rem; font-weight: 400; padding: 15px 0; transition: all .5s;}
+.sub_nav li a:hover, .sub_nav li .current{background: #fd0000; color: #fff; font-weight: 700;}
+
+
+
+#content .title{text-align: center; overflow: hidden; margin:50px 0 50px 0;}
+#content .title h2{font-size:2rem ;}
+#content .title p{color: #fd0000; font-size: 1.25rem;}
+
+#content #map{width:94%; height: 350px; margin:0 auto 50px;}
+
+#content table{width: 94%; margin: 0 auto 50px;}
+#content th, #content td{padding: 15px 10px; text-align: left;
+border-bottom:1px solid #ccc ;line-height: 1.5em; }
+#content th{position: relative; width: 40%;}
+#content .material-symbols-outlined{font-size: 30px;}
+#content th strong{font-size: 1.1rem;position: absolute;
+  left:50px; top:50%; margin-top: -11px;}
+#content tr:first-child{border-top: 3px solid #666;}

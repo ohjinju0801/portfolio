@@ -1,0 +1,38 @@
+.visual{position: relative;}
+.visual img{ width: 100%;}
+.visual h3{width: 100%; position: absolute; text-align: center; font-size: 1.88rem; font-weight: 400;
+     z-index: 10;left:0; top:50%; color: #fff;}
+
+.sub_nav{width: 100%; border-bottom: 1px solid #ccc;}
+.sub_nav ul{overflow: hidden; width: 100%; margin: 0 auto;}
+.sub_nav li{width: 25%; float: left; color: #333; text-align: center; }
+.sub_nav li a{font-size: 1.16rem; font-weight: 400; padding: 15px 0; transition: all .5s;} 
+.sub_nav li a:hover, .sub_nav li .current{background: #fd0000; color: #fff; font-weight: 700;}     
+
+#content .title{text-align: center; overflow: hidden; margin:50px 0 50px 0;}
+#content .title h2{font-size:2rem ;}
+#content .title p{color: #fd0000; font-size: 1.25rem;}
+
+
+
+
+#content .world{position: relative;}
+#content .world .worldmap{position: relative; width: 100%;}
+#content .world p{position: absolute; text-align:center; left:0; top:30%;
+     font-size: 1.00rem; color: #666; width: 80%; margin: 0 10%; text-align: justify;}
+
+
+#content h3{font-size: 2.00rem; font-weight: 600; text-align: center; color: #666;
+margin-bottom: 30px;}
+#content ul li img{width: 100%;}
+#content ul li dl{width: 90%; text-align: justify; margin: 20px 0 30px 10px;}
+#content ul dl dt{font-size: 1.88rem; font-weight: 600; color: #fd0000;}
+#content ul dl dd{font-size: 1.25rem; font-weight: 400;}
+
+
+
+#content .box{position: relative; width:100%;
+     background: url(../images/po.jpg); background-attachment: fixed; margin-bottom: 100px;}
+
+#content .box p{font-size: 1.00rem; color: #fff; text-align: justify;
+      margin-top: 150px; padding: 15px;}

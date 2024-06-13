@@ -1,0 +1,130 @@
+
+@font-face{
+    font-family:Mapo;
+    src:url('../images/Mapo.eot');
+    src:url('../images/Mapo.woff') format('woff'),
+        url('../images/Mapo.ttf') format('truetype');
+  }
+  
+/*  font-family: "Noto Sans KR", sans-serif; */
+
+/* 비주얼영역 */
+
+
+/*메인 비주얼,콘텐츠 */
+
+/* 비주얼 */
+.visual{box-sizing: border-box;}
+.visual li{position: relative;}
+.visual img{width:100%;}
+.visual p{position: absolute; font-family:Mapo ; top:40%;width: 90%; margin: 0 5%;  font-size: 2.50rem; color: #fff;}
+
+.visual .swiper-container {
+     width: 100%;
+     height:auto; 
+     /* height 유동으로 height:auto */
+}
+.visual .swiper-slide {
+     height:auto ;
+     box-sizing: border-box;
+}   
+.visual .swiper-pagination-bullet-active{
+     background: red;
+ } 
+
+
+ #content h3{text-transform: uppercase;}
+
+/* section1 */
+.tumsaemenu{background: #FFFDEA; padding-bottom: 50px;}
+.tumsaemenu h3{font-size: 1.88rem; font-weight: 500; color: #fd0000; 
+    text-align: center; padding-top: 80px;}
+.tumsaemenu p{font-size: 1.00rem; text-align:center; font-weight:500;
+     margin-bottom: 30px;}
+.tumsaemenu .swiper-container {
+     width: 100%;
+     height:auto; 
+     /* height 유동으로 height:auto */
+}
+.tumsaemenu .swiper-slide {
+height:auto; 
+box-sizing: border-box;
+}   
+.tumsaemenu ul{padding-bottom: 60px;}
+.tumsaemenu img{width: 100%;}
+.tumsaemenu .swiper-pagination-bullet-active{
+     background: red;
+ } 
+.tumsaemenu ul li span{display: block; text-align: center; font-size: 1.2em;}
+
+
+
+/* section2 */
+.tumsaestory{position: relative;}
+.tumsaestory img{width: 100%;}
+.tumsaestory div{ border: 3px solid #fd0000;
+background: #fff; width: 230px; height: 230px; opacity: 90%; top: 30px; right:5%;
+ position: absolute; padding: 10px; }
+.tumsaestory div h4{color: black; font-size: 1.25rem; font-weight: 600; margin-bottom: 10px;}
+.tumsaestory p{font-size: 1.10rem; margin-bottom: 20px;}
+.tumsaestory a{background-color: #fd0000; color: #fff; padding: 10px;}
+
+
+/* section3 */
+.search{background-color: #B80101; padding-bottom: 50px;}
+.search h3{margin:0 10px 20px; padding-top: 50px; font-size: 1.45rem;
+       text-align: center;color: #fff; font-weight: 500;}
+.search div{width:90%; margin: 0 auto; background: #fff; overflow: hidden; 
+    padding: 10px; margin-bottom: 10px; border-radius: 30px; color: #fd0000;
+    box-shadow: 2px 2px 15px 2px rgba(0,0,0,.2);}
+.search input{width:70%;font-size: 1.13rem; margin-top: 7px; margin-left: 30px;
+        font-weight: 400; color: #fd0000; border:0; outline: 0;} 
+.search div a{float: right; margin-top: 5px;}
+.search div a span{ font-size: 2.00rem; color: #000;}
+.search>span{font-size: 1.00rem;color: #fff; margin-left: 30px;}
+
+
+/* setion4 */
+.youtube{background:#FFFDEA; padding-bottom: 50px;}
+.youtube h3{text-align: center; color: #fd0000; font-size: 1.88rem; padding-top: 50px;}
+.youtube p{text-align: center; font-size: 1.88rem;
+    font-size: 1.00rem; text-align:center; font-weight:500;
+    margin-bottom: 50px;}
+
+.youtube .swiper-container {
+     width: 100%;
+     height:auto; 
+     /* height 유동으로 height:auto */
+ }
+ .youtube .swiper-slide {
+     height:auto;
+     box-sizing: border-box;
+     padding: 0 5px;
+ }   
+ .youtube .swiper-pagination-bullet-active{
+     background: red;
+ } 
+ .youtube ul{padding-bottom: 60px;}
+.youtube ul li span:nth-of-type(1){display: block; margin-bottom: 20px; position: relative;}
+.youtube img{ width: 100%; border-radius: 20px;}
+.youtube ul li span:nth-of-type(1)::after{content: ''; display: block; width: 50px; height: 50px; background: url(../images/youtubu.png);
+    position: absolute; top: 50%; left: 50%; transform: translate(-50% , -50%); opacity: .8; }
+.youtube dl dt{font-size: 1.00rem; font-weight: 500; margin-bottom: 10px;}
+.youtube dl dd{font-size: 0.94rem; font-weight: 400;}
+.youtube span{ font-weight: 400;}
+
+
+
+
+/* setion5 */
+.qanda{position: relative; background: url(../images/qaimg.jpg) no-repeat center; 
+     background-size: cover; overflow: hidden;}
+.qanda .qa{padding:50px 30px; background: rgba(255,255,255,.7);
+    width: 80%; margin: 70px auto; border-radius: 30px;}
+.qanda .qa h3{font-size: 1.88rem; color: #fd0000; margin-bottom: 10px;}
+.qanda .qa p{font-size: 1.10rem; font-weight:500; color: #000; margin-bottom: 15px;}
+.qanda .qa li{font-size: 1.00rem;
+     color: #000; font-weight: 500; background: rgba(255,255,255,.5);
+    border-radius: 10px; margin-bottom: 10px;}
+.qanda .qa li a{padding: 10px; overflow: hidden;}
+.qanda .qa li a span{float: right;}

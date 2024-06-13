@@ -1,0 +1,27 @@
+.visual{position: relative;}
+.visual img{ width: 100%; filter: brightness(60%);}
+.visual h3{width: 100%; position: absolute; text-align: center; font-size: 1.88rem; font-weight: 400;
+     z-index: 10;left:0; top:40%; color: #fff;}
+
+.sub_nav{width: 100%; border-bottom: 1px solid #ccc;}
+.sub_nav ul{overflow: hidden; width: 100%; margin: 0 auto;}
+.sub_nav li{width: 25%; float: left; color: #333; text-align: center; }
+.sub_nav li a{font-size: 1.16rem; font-weight: 400; padding: 15px 0; transition: all .5s;}
+.sub_nav li a:hover, .sub_nav li .current{background: #fd0000; color: #fff; font-weight: 700;}     
+     
+#content .title{text-align: center; overflow: hidden; margin:50px 0 50px 0;}
+#content .title h2{font-size:2rem;}
+#content .title p{color: #fd0000; font-size: 1.25rem; text-align: center;}
+
+
+
+#content ul li img{width: 50%; margin-left: 25%; margin-bottom: 20px;}
+
+#content li{padding: 20px;}        
+#content li dl{text-align: center; padding: 30px; 
+     background: #fd0000; border-radius: 30px; padding: 20px;}
+#content li dl dt{font-size: 1.35rem; color: #ffffff; margin-bottom: 10px;}
+#content li dl dd{font-size: 1.00rem;
+      text-align: justify; color: #ffffff;}
+#content .list4 dl{margin-bottom: 100px;}      
+

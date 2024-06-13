@@ -1,0 +1,24 @@
+.visual{position: relative;}
+.visual img{ width: 100%; filter: brightness(60%);}
+.visual h3{width: 100%; position: absolute; text-align: center; font-size: 1.88rem; font-weight: 400;
+     z-index: 10;left:0; top:40%; color: #fff;}
+
+.sub_nav{width: 100%; border-bottom: 1px solid #ccc;}
+.sub_nav ul{overflow: hidden; width: 100%; margin: 0 auto;}
+.sub_nav li{width: 33.3333%; float: left; color: #333; text-align: center; }
+.sub_nav li a{font-size: 1.16rem; font-weight: 400; padding: 15px 0; transition: all .5s;}
+.sub_nav li a:hover, .sub_nav li .current{background: #fd0000; color: #fff; font-weight: 700;}
+
+#content .title{text-align: center; overflow: hidden; margin:50px 0 50px 0;}
+#content .title h2{font-size:2rem;}
+#content .title p{color: #fd0000; font-size: 1.25rem; text-align: center;}
+
+
+
+#content .box1 div{display: flex;}
+#content .box1 div{border-bottom: 1px solid #d8d8d8; line-height: 1.25em;}
+#content .box1 img{padding: 20px;}
+#content .box1 dl{margin-top: 25px; padding: 10px;}
+#content .box1 dl dt{font-size: 1.4rem; margin-bottom: 10px; font-weight: 500;}
+#content .box1 dl dd{font-size: 1.1rem; line-height: 1.5rem; text-align: justify;}
+#content .box1 .open7{margin-bottom: 100px;}

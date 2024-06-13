@@ -1,0 +1,31 @@
+.visual{position: relative;}
+.visual img{ width: 100%; filter: brightness(60%);}
+.visual h3{width: 100%; position: absolute; text-align: center; font-size: 1.88rem; font-weight: 400;
+     z-index: 10;left:0; top:40%; color: #fff;}
+
+.sub_nav{width: 100%; border-bottom: 1px solid #ccc;}
+.sub_nav ul{overflow: hidden; width: 100%; margin: 0 auto;}
+.sub_nav li{width: 25%; float: left; color: #333; text-align: center; }
+.sub_nav li a{font-size: 1.16rem; font-weight: 400; padding: 15px 0; transition: all .5s;}
+.sub_nav li a:hover, .sub_nav li .current{background: #fd0000; color: #fff; font-weight: 700;}   
+
+#content .title{text-align: center; overflow: hidden; margin:50px 0 50px 0;}
+#content .title h2{font-size:2rem;}
+
+
+.product .serch_box{width:100%; margin-top: 50px;text-align: center; margin-bottom: 50px;}
+.product .serch_box label{font-size: 1.38rem;}
+.product .serch_box input{font-size: 1.25rem;padding:5px 10px; ; border: 0; 
+     border-bottom: 1px solid #999; outline: 0; width: 60%; }
+.product .serch_box span{display: block;margin: 15px 15%; overflow: hidden;}
+.product .serch_box button{width: 48%;  font-size: 18px; border: 0;  margin: 0 1%;
+     background: orange; color: #fff; font-weight: bold; border-radius: 10px;
+     float: left;padding: 10px 0; cursor: pointer;}
+.product .serch_box .btn_all{background: #fd0000;}
+
+.product ul{overflow: hidden;}
+.product li{width: 48%; float: left; text-align: center; margin:0 1% 30px;}
+.product li img{width:100%; border-radius: 20px;}
+.product li dl{width: 200px; margin: 15px auto;} 
+.product li dt{font-size:18px ; font-weight: bold; margin-bottom: 10px;}
+.product li dd{line-height: 1.5em;}
